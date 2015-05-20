@@ -68,9 +68,8 @@ Require Plugins
 
 require get_template_directory() . '/lib/class-tgm-plugin-activation.php';
 require get_template_directory() . '/lib/theme-require-plugins.php';
-
+require_once get_template_directory() . '/lib/wp_bootstrap_navwalker.php';
 // add_action( 'tgmpa_register', 'mb_register_required_plugins' );
-
 
 /****************************************
 Misc Theme Functions

@@ -25,27 +25,10 @@
 
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_mbbasetheme' ); ?></a>
 
-	<header id="masthead" class="grid" role="banner">
-		<nav id="site-navigation" class="main-navigation module col-1-3 no-btm-padding" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Menu', '_mbbasetheme' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
-		<div class="module col-1-3 align-center no-btm-padding">				
-					<!--Site Logo -->
-					<h1 class="site-title">
-						<?php if ( function_exists( 'get_option_tree' ) ) : if ( get_option_tree( 'logo_upload' ) ) : ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php get_option_tree( 'logo_upload', '', 'true' ); ?>" alt="<?php get_option_tree('logo_alt', '', 'true') ?>" 
-								title="<?php get_option_tree('logo_title', '', 'true') ?>"/>
-						</a> 
-						<?php else : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-						<?php endif; endif; ?>
-					<!--End site logo -->
-					</h1>
-			</div>
-		<div class="module col-1-3 no-btm-padding">			
+	<header id="masthead" role="banner">
+		<div class="navbar navbar navbar-static-top">
+		<div class="container">
+		<div class="social-header navbar-text">			
 			<ul class="social-header">
 				<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
 				<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -56,6 +39,27 @@
 				<li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
 			</ul>
 		</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>	
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<?php
+		            wp_nav_menu( array(
+		                'menu'              => 'primary',
+		                'theme_location'    => 'primary',
+		                'depth'             => 2,
+		                'menu_class'        => 'nav navbar-nav navbar-right',
+		                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+		                'walker'            => new wp_bootstrap_navwalker())
+		            );
+        		?>
+			</div>
+		</div>
+			
+		</div>
+		
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content clear">
+	<div id="content" class="container">
