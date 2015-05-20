@@ -4,29 +4,19 @@
  *
  * This is the template that displays on the front page only.
  *
- * @package _mbbasetheme
+ * @package _orbit2
  */
 
 get_header(); ?>
+<section class="hero">
+	
+</section>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<section class="about">
+	
+</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+<section class="portfolio">
+	
+</section>
 <?php get_footer(); ?>

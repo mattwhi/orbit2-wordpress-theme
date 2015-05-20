@@ -1,9 +1,9 @@
 /*!
-Theme Name: WordPress Starter Theme
-Theme URI: http://www.THEME.com
-Author: Matt Banks
-Author URI: http://mattbanks.me
-Description: WordPress Starter Theme for use as a starting template for building custom themes.
+Theme Name: Orbit2 Wordpress Theme
+Theme URI: http://www.orbit2.co.uk	
+Author: Matt White
+Author URI: http://www.orbit2.co.uk
+Description: Orbit2 Custom WordPress Theme
 Version: 1.0
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -46,6 +46,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "partials/widgets";
 @import "partials/comments";
 @import "partials/forms";
+@import "partials/social";
+@import "partials/font-awesome";
 
 // Helper Classes, Print, Etc
 @import "partials/helpers";

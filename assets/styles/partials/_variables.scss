@@ -2,8 +2,8 @@
    Variables
    ========================================================================== */
 
-// Font Face
-// @include fontface('FONT_NAME', 'assets/fonts/', 'FONT_FAMILY');
+ //Font Face
+ //@include fontface('FONT_NAME', 'assets/fonts/', 'FONT_FAMILY');
 
 // Structure
 $pageWidth: 1000px;
@@ -12,5 +12,12 @@ $pageWidth: 1000px;
 $selectionColor: orange;
 
 // Colors
-$red: red;
-$blue: blue;
+$red: #ad5353;
+$blue: #535cad;
+$grey: #666;
+
+//url
+$asset: "assets/";
+
+// borders
+$border-light: 1px solid #ccc;
