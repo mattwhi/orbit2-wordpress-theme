@@ -46,10 +46,6 @@ function custom_theme_options() {
         'title'       => __( 'Typography', 'theme-text-domain' )
       ),
       array(
-        'id'          => 'slider_settings',
-        'title'       => __( 'Slider Settings', 'theme-text-domain' )
-      ),
-      array(
         'id'          => 'homepage_settings',
         'title'       => __( 'Home Page Settings', 'theme-text-domain' )
       ),
@@ -84,6 +80,22 @@ function custom_theme_options() {
         'section'     => 'basic_options'
       ),
       array(
+        'id'          => 'background_color',
+        'label'       => __( 'Background Color', 'theme-text-domain' ),
+        'desc'        => 'Set your background',
+        'std'         => '',
+        'type'        => 'colorpicker',
+        'section'     => 'basic_options'
+      ),
+      array(
+        'id'          => 'css',
+        'label'       => 'Custom CSS',
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'css',
+        'section'     => 'basic_options'
+      ),
+      array(
         'id'          => 'google_fonts',
         'label'       => __( 'Google Fonts', 'theme-text-domain' ),
         'desc'        => '',
@@ -99,11 +111,11 @@ function custom_theme_options() {
       ),
       array(
         'id'          => 'my_slider',
-        'label'       => 'images',
+        'label'       => 'Slider Settings',
         'desc'        => '',
         'std'         => '',
         'type'        => 'list-item',
-        'section'     => 'slider_settings',
+        'section'     => 'homepage_settings',
         'rows'        => '',
         'post_type'   => '',
         'taxonomy'    => '',
@@ -259,15 +271,6 @@ function custom_theme_options() {
             'type'    => 'text',
             'class'   => '',
             'choices' => array()
-            ),
-          array(
-            'id'      => 'feature_opposite',
-            'label'   => 'Reverse Layout',
-            'desc'    => '',
-            'std'     => '',
-            'type'    => 'radio',
-            'class'   => '',
-            'choices' => array('yes', 'no')
             ),
           array(
             'id'      => 'feature_description',

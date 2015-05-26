@@ -29,5 +29,6 @@
 <?php wp_footer(); ?>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lib/bootstrap-sprockets.js"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lib/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/dynamic.css" />
 </body>
 </html>
