@@ -46,8 +46,12 @@ function custom_theme_options() {
         'title'       => __( 'Typography', 'theme-text-domain' )
       ),
       array(
-        'id'          => 'home_page',
-        'title'       => __( 'Home Page', 'theme-text-domain' )
+        'id'          => 'slider_settings',
+        'title'       => __( 'Slider Settings', 'theme-text-domain' )
+      ),
+      array(
+        'id'          => 'homepage_settings',
+        'title'       => __( 'Home Page Settings', 'theme-text-domain' )
       ),
       array(
         'id'          => 'social_settings',
@@ -94,86 +98,262 @@ function custom_theme_options() {
         'section'     => 'typography'
       ),
       array(
-        'id'          => 'hero_background',
-        'label'       => __( 'Hero Background', 'theme-text-domain' ),
+        'id'          => 'my_slider',
+        'label'       => 'images',
         'desc'        => '',
         'std'         => '',
-        'type'        => 'background',
-        'section'     => 'home_page',
+        'type'        => 'list-item',
+        'section'     => 'slider_settings',
         'rows'        => '',
         'post_type'   => '',
         'taxonomy'    => '',
         'min_max_step'=> '',
         'class'       => '',
-        'condition'   => '',
-        'operator'    => 'and'
+        'choices'     => array(),
+        'settings'    => array(
+          array(
+            'id'      => 'slider_image',
+            'label'   => 'Image',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'upload',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => 'slider_link',
+            'label'   => 'Link to Post',
+            'desc'    => 'Enter the posts url.',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => 'slider_active',
+            'label'   => 'Active Slide',
+            'desc'    => 'Enter Active',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => 'slider_header',
+            'label'   => 'Header',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+            ),
+          array(
+            'id'      => 'slider_description',
+            'label'   => 'Description',
+            'desc'    => 'This text is used to add fancy captions in the slider.',
+            'std'     => '',
+            'type'    => 'textarea',
+            'class'   => '',
+            'choices' => array()
+            )
+          )
       ),
-      array(
-        'id'          => 'hero_title',
-        'label'       => __( 'Hero Title', 'theme-text-domain' ),
-        'desc'        => 'Set your hero title',
-        'std'         => '',
-        'type'        => 'text',
-        'section'     => 'home_page'
-      ),
-      array(
-        'id'          => 'facebook',
-        'label'       => __( 'Facebook', 'theme-text-domain' ),
+        array(
+        'id'          => '3_col',
+        'label'       => '3 Column Options',
         'desc'        => '',
         'std'         => '',
-        'type'        => 'text',
-        'section'     => 'social_settings'
+        'type'        => 'list-item',
+        'section'     => 'homepage_settings',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'choices'     => array(),
+        'settings'    => array(
+          array(
+            'id'      => '3_col_image',
+            'label'   => 'Image',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'upload',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => '3_col_link',
+            'label'   => 'Link to Post',
+            'desc'    => 'Enter the posts url.',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => '3_col_button',
+            'label'   => 'Button Text',
+            'desc'    => 'Enter the button Text.',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => '3_col_header',
+            'label'   => 'Header',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+            ),
+          array(
+            'id'      => '3_col_description',
+            'label'   => 'Description',
+            'desc'    => 'This text is used to add fancy captions in the slider.',
+            'std'     => '',
+            'type'    => 'textarea',
+            'class'   => '',
+            'choices' => array()
+            )
+          )
       ),
       array(
-        'id'          => 'twitter',
-        'label'       => __( 'Twitter', 'theme-text-domain' ),
+        'id'          => 'features',
+        'label'       => 'Features',
         'desc'        => '',
         'std'         => '',
-        'type'        => 'text',
-        'section'     => 'social_settings'
+        'type'        => 'list-item',
+        'section'     => 'homepage_settings',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'choices'     => array(),
+        'settings'    => array(
+          array(
+            'id'      => 'feature_image',
+            'label'   => 'Image',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'upload',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => 'feature_header',
+            'label'   => 'Heading',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+            ),
+          array(
+            'id'      => 'feature_sub_header',
+            'label'   => 'Sub Heading',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+            ),
+          array(
+            'id'      => 'feature_opposite',
+            'label'   => 'Reverse Layout',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'radio',
+            'class'   => '',
+            'choices' => array('yes', 'no')
+            ),
+          array(
+            'id'      => 'feature_description',
+            'label'   => 'Description',
+            'desc'    => 'This text is used to add fancy captions in the slider.',
+            'std'     => '',
+            'type'    => 'textarea',
+            'class'   => '',
+            'choices' => array()
+            )
+          )
       ),
       array(
-        'id'          => 'google_plus',
-        'label'       => __( 'Google+', 'theme-text-domain' ),
+        'id'          => 'social_icons',
+        'label'       => 'Social Icons',
         'desc'        => '',
         'std'         => '',
-        'type'        => 'text',
-        'section'     => 'social_settings'
-      ),
-      array(
-        'id'          => 'tumblr',
-        'label'       => __( 'Tumblr', 'theme-text-domain' ),
-        'desc'        => '',
-        'std'         => '',
-        'type'        => 'text',
-        'section'     => 'social_settings'
-      ),
-      array(
-        'id'          => 'linkedin',
-        'label'       => __( 'LinkedIn', 'theme-text-domain' ),
-        'desc'        => '',
-        'std'         => '',
-        'type'        => 'text',
-        'section'     => 'social_settings'
-      ),
-      array(
-        'id'          => 'rss',
-        'label'       => __( 'RSS', 'theme-text-domain' ),
-        'desc'        => '',
-        'std'         => '',
-        'type'        => 'text',
-        'section'     => 'social_settings'
-      ),
-      array(
-        'id'          => 'digg',
-        'label'       => __( 'Digg', 'theme-text-domain' ),
-        'desc'        => '',
-        'std'         => '',
-        'type'        => 'text',
-        'section'     => 'social_settings'
-      ),
-    )
-  );
+        'type'        => 'list-item',
+        'section'     => 'social_settings',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'choices'     => array(),
+        'settings'    => array(
+          array(
+            'id'      => 'social_class',
+            'label'   => 'Name',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => 'socialUrl',
+            'label'   => 'Social Url',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'text',
+            'class'   => '',
+            'choices' => array()
+          ),
+          array(
+            'id'      => 'socialFontAwesome',
+            'label'   => 'Social Icon',
+            'desc'    => '',
+            'std'     => '',
+            'type'    => 'select',
+            'class'   => '',
+            'choices' => array(
+              array(
+                'value' => '', 
+                'label' => 'Select an Icon'
+                ),
+              array(
+                'value' => 'fa fa-twitter', 
+                'label' => 'Twitter'
+                ),
+              array(
+                'value' => 'fa fa-facebook', 
+                'label' => 'Facebook'
+                ),
+              array(
+                'value' => 'fa fa-google-plus', 
+                'label' => 'Google Plus'
+                ),
+              array(
+                'value' => 'fa tumblr', 
+                'label' => 'Tumblr'
+                ),
+              array(
+                'value' => 'fa fa-stumbleupon', 
+                'label' => 'Stumbleupon'
+                ),
+              array(
+                'value' => 'fa fa-rss', 
+                'label' => 'RSS'
+                )
+              )
+            ),
+          )
+        )
+      )
+    );
   
   /* allow settings to be filtered before saving */
   $custom_settings = apply_filters( ot_settings_id() . '_args', $custom_settings );

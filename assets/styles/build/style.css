@@ -1059,8 +1059,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
   position: relative;
@@ -5262,7 +5262,6 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 .navbar:before, .navbar:after {
@@ -8083,6 +8082,18 @@ body.home h1 {
 }
 body.home h1 img {
   width: 200px;
+}
+body.home .carousel {
+  margin-bottom: 60px;
+}
+body.home .featurette-heading {
+  margin-top: 120px;
+}
+body.home .featurette-divider {
+  margin: 80px 0;
+}
+body.home .marketing .col-lg-4 {
+  text-align: center;
 }
 
 /* ==========================================================================

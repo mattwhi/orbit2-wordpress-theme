@@ -20,14 +20,19 @@ body.home {
 	h1 img {
 		width: 200px;
 	}
-	section.hero {
-
+	.carousel {
+		margin-bottom: 60px;
 	}
-	section.about {
-		
+	.featurette-heading {
+  		margin-top: 120px;
 	}
-	section.portfolio {
-		
+	.featurette-divider {
+  		margin: 80px 0;
+	}
+	.marketing {
+		.col-lg-4 {
+			text-align:center;
+		}
 	}
 
 }

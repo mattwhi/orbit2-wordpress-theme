@@ -27,7 +27,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap-sprockets.js"></script>
-	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lib/bootstrap-sprockets.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lib/bootstrap.min.js"></script>
 </body>
 </html>
